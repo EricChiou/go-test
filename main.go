@@ -28,27 +28,27 @@ func testGoroutinepool() {
 }
 
 func testHttprouter() {
-	httprouter.Get("/", demo)
-	httprouter.Get("/demo", demo)
-	httprouter.Get("/demo/id/demo2", demo)
-	httprouter.Get("/demo/demo/demo/demo", demo)
+	httprouter.Get("/", handler)
+	httprouter.Get("/path", handler)
+	httprouter.Get("/path/id/path2", handler)
+	httprouter.Get("/path/path/path2", handler)
 
 	// path parameter
-	httprouter.Get("/demo/:id/demo", demoParam)
-	httprouter.Get("/:id/demo", demoParam)
-	httprouter.Get("/demo/demo/demo2/:id", demoParam)
+	httprouter.Get("/path/:id/path", handlerParam)
+	httprouter.Get("/:id/path", handlerParam)
+	httprouter.Get("/path/path/path2/:id", handlerParam)
 
 	// duplicate path
-	// httprouter.Get("/demo/demo", demo)
+	// httprouter.Get("/path/path", handler)
 
 	// invalid character, only accept 0-9, a-z, A-Z
-	// httprouter.Get("/demo/&", demo)
-	// httprouter.Get("/demo/:!", demo)
+	// httprouter.Get("/path/&", handler)
+	// httprouter.Get("/path/:!", handler)
 
 	// wrong format
-	// httprouter.Get("demo/demo", demo) // url path should start with "/"
-	// httprouter.Get("/demo/demo/", demo) // url path should not end with "/"
-	// httprouter.Get("/demo//demo", demo)
+	// httprouter.Get("path/path", handler) // should start with "/"
+	// httprouter.Get("/path/path/", handler) // should not end with "/"
+	// httprouter.Get("/path//path", handler)
 
 	// set headers
 	httprouter.SetHeader("Access-Control-Allow-Origin", "*")
@@ -72,11 +72,11 @@ func testHttprouter() {
 	}()
 }
 
-func demo(context *httprouter.Context) {
+func handler(context *httprouter.Context) {
 	fmt.Fprintf(context.Ctx, "url path: %s", string(context.Ctx.Path()))
 }
 
-func demoParam(context *httprouter.Context) {
+func handlerParam(context *httprouter.Context) {
 	id, _ := context.GetPathParam("id")
 	fmt.Fprintf(context.Ctx, "url path: %s\nid: %s", string(context.Ctx.Path()), id)
 }
