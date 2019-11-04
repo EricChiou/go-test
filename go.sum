@@ -1,7 +1,7 @@
-github.com/EricChiou/goroutinepool v0.0.0-20191101081306-94457606113a h1:LTh8JdqJWkmGOKhZtvmOlb4pveqww63lWBLYuEGnrJw=
-github.com/EricChiou/goroutinepool v0.0.0-20191101081306-94457606113a/go.mod h1:rULp3mzLxTvhzrZ7bAzM7b4y5Ah5dmFqW5hSTb1rzoM=
-github.com/EricChiou/httprouter v0.0.0-20191101085331-a713481b336d h1:uwZuM3wiY2KRoTuEHw65uLsNJyT08q2Tz9dqN2kpV/E=
-github.com/EricChiou/httprouter v0.0.0-20191101085331-a713481b336d/go.mod h1:EU0vNQOFIs7zhbDdFAk7IXP5mzQQEiz4CoO4Vkdo3OM=
+github.com/EricChiou/goroutinepool v0.0.0-20191104015104-41a13ebec4ae h1:0nQz8LD8HD1p1bWtIFloHf6CtG0yb5PYi+fgkJjQfiM=
+github.com/EricChiou/goroutinepool v0.0.0-20191104015104-41a13ebec4ae/go.mod h1:rULp3mzLxTvhzrZ7bAzM7b4y5Ah5dmFqW5hSTb1rzoM=
+github.com/EricChiou/httprouter v0.0.0-20191104041001-0a8003324ec3 h1:f+9N3XqN11/SJ+r2zaKDwyJ3trUteBdfhJGXjyJGEiE=
+github.com/EricChiou/httprouter v0.0.0-20191104041001-0a8003324ec3/go.mod h1:EU0vNQOFIs7zhbDdFAk7IXP5mzQQEiz4CoO4Vkdo3OM=
 github.com/klauspost/compress v1.8.2 h1:Bx0qjetmNjdFXASH02NSAREKpiaDwkO1DRZ3dV2KCcs=
 github.com/klauspost/compress v1.8.2/go.mod h1:RyIbtBH6LamlWaDj8nUwkbUhJ87Yi3uG0guNDohfE1A=
 github.com/klauspost/cpuid v1.2.1 h1:vJi+O/nMdFt0vqm8NZBI6wzALWdA2X+egi0ogNyrC/w=
